@@ -1,12 +1,14 @@
 # Pokemon detection
 The programm uses machine learning (tensorflow in python) to take any image, scale it and return a prediced pokemon type. 
 
-The main file to run is loadAndUseModel. Sadly my model object file was to large to upload here, so you will have to train the model yourself, locally.
-You should be able to do this by running the MLpokemon.py file, at which point a model will be created (consisting of a model.index and model.data file), ready for use in the loadAndUseModel.py file.
-
 How to use:
 1. extract the zip file PokeSprites.zip
-2. 
+2. inside the new folder called PokeSprites, you will find another folder called PokeSprites. Copy this second folder into the directory of the other files. 
+3. Run the MLpokemon.py file to create a model. For how long you want to train can be adjustet by changing the epochs variable at the bottom of the programm (default is 100, more should not be nessecary)
+4. Replace the usedImg.png file with the image you want to preform pokemon-analysis on.
+5. Run the loadAndUseModel.py file to use the model. 
+6. Repeat 4-5 for any images you want to analyse (no need to make a new model)
+
 
 Overview of files:
 
